@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="traduzir">перевести</string>
+    <string name="espaco">пространствоs</string>
+    <string name="limpa">чистый</string>
+    <string name="tabela">стол</string>
+
+    <string name="copiar">скопированный</string>
+    <string name="colar">клееный</string>
+
+    <string name="configuracoes">конфигурации</string>
+    <string name="salvar">спасти</string>
+
+
+    <string name="espaco_entre_palavras">пробел между словами</string>
+    <string name="letras">слова</string>
+
+    <string name="tamanho_da_fonte_texto">Таманью да Фонте</string>
+    <string name="salvado_com_suscesso">сохраненный ком Случается</string>
+    <string name="salvado_novamente">Сохраненный большую часть времени</string>
+
+
+</resources>

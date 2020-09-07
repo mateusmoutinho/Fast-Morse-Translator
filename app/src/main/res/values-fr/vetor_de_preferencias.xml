@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tamanho_de_fonte">
+        <item>petit</item>
+        <item>moyen</item>
+        <item>gros</item>
+        <item>très grand</item>
+    </string-array>
+
+    <string-array name="tipo_de_espaco">
+        <item>barre</item>
+        <item>2 espaces </item>
+        <item>3 espaces</item>
+        <item>4 espaces</item>
+    </string-array>
+
+    <string-array name="letras_maiusculas_e_minusculas">
+        <item>minuscule</item>
+        <item>lettres majuscules</item>
+    </string-array>
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="traduzir">tradurre</string>
+    <string name="espaco">spazio</string>
+    <string name="limpa">pulito</string>
+    <string name="tabela">tavolo</string>
+
+    <string name="copiar">copiato</string>
+    <string name="colar">incollato</string>
+
+    <string name="configuracoes">configurazioni</string>
+    <string name="salvar">Salva</string>
+
+
+    <string name="espaco_entre_palavras">spazio tra le parole</string>
+    <string name="letras">parole</string>
+
+    <string name="tamanho_da_fonte_texto">tamanho da Fonte</string>
+    <string name="salvado_com_suscesso">salvato con successoo</string>
+    <string name="salvado_novamente">salvato nuovo</string>
+
+
+</resources>

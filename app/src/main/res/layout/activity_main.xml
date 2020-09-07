@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fundo_azul"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_toEndOf="@+id/botao_config"
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
+
+    <ImageView
+        android:id="@+id/fundo_azul"
+        android:layout_width="1000dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:background="#1E88E5" />
+
+    <EditText
+        android:id="@+id/editText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/botao_traco"
+        android:layout_below="@id/fundo_azul"
+        android:layout_alignParentLeft="false"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:ems="50"
+        android:enabled="true"
+        android:fadeScrollbars="true"
+        android:gravity="start"
+        android:includeFontPadding="true"
+        android:inputType="textMultiLine"
+        android:maxLines="200"
+        android:onClick="atualiza_preferencias_de_usuarios"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="10dp"
+        android:scrollbarStyle="outsideInset"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textSize="30sp"
+        android:theme="@style/AppTheme" />
+
+    <Button
+        android:id="@+id/botao_espaco"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="12dp"
+        android:background="#1E88E5"
+        android:editable="false"
+        android:onClick="escreve_espaco"
+        android:text="@string/espaco"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botao_traco"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@id/botao_espaco"
+        android:layout_marginBottom="12dp"
+        android:layout_toLeftOf="@id/botao_retry"
+        android:layout_toRightOf="@id/botoa_ponto"
+        android:background="#1E88E5"
+        android:onClick="escreve_traco"
+        android:text="@string/traco"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textScaleX="2.5"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botoa_ponto"
+        android:layout_width="44dp"
+        android:layout_height="50dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_above="@id/botao_espaco"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="false"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@id/botao_limpa"
+        android:background="#1E88E5"
+        android:onClick="escreve_ponto"
+        android:text="@string/ponto"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botao_traduzir"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/botao_retry"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@id/botao_traco"
+        android:width="120dp"
+        android:background="#43A047"
+        android:duplicateParentState="false"
+        android:minWidth="50dp"
+        android:minHeight="12dp"
+        android:onClick="traduz_texto"
+        android:shadowColor="#00FCFCFC"
+        android:text="@string/traduzir"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/tabela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@id/botao_retry"
+        android:width="54dp"
+        android:background="#3949AB"
+        android:duplicateParentState="false"
+        android:minWidth="50dp"
+        android:onClick="inicia_tabela"
+        android:shadowColor="#00FCFCFC"
+        android:text="@string/tabela"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botao_limpa"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toLeftOf="@id/botao_espaco"
+        android:background="#FC982A"
+        android:onClick="limpa"
+        android:text="@string/limpa"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/botao_colar"
+        android:layout_width="37dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:background="#00ECECEC"
+        android:onClick="colar"
+        android:src="@mipmap/colar_branco" />
+
+    <ImageButton
+        android:id="@+id/botao_copiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botao_colar"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/botao_colar"
+        android:background="#00ECECEC"
+        android:onClick="copiar"
+        android:src="@mipmap/copiar_branco" />
+
+    <ImageButton
+        android:id="@+id/botao_config"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="#00ECECEC"
+        android:onClick="inicia_configuracoes"
+        android:src="@mipmap/configuracoes" />
+
+    <ImageButton
+        android:id="@+id/apaga"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/botao_limpa"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="14dp"
+        android:layout_toLeftOf="@id/botoa_ponto"
+        android:background="#1E88E5"
+        android:onClick="apaga_um_digito"
+        android:src="@mipmap/backspace12" />
+
+    <ImageButton
+        android:id="@+id/botao_retry"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@id/botao_espaco"
+        android:background="#43A047"
+        android:isScrollContainer="false"
+        android:onClick="retry"
+        android:scaleType="centerInside"
+        android:src="@mipmap/volta" />
+
+    <TextView
+        android:id="@+id/copiar_e_colar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="traduzir">traducir</string>
+    <string name="espaco">espacio</string>
+
+    <string name="limpa">limpiar</string>
+    <string name="tabela">tabla</string>
+
+    <string name="copiar">copiado</string>
+    <string name="colar">pegado</string>
+
+    <string name="configuracoes">ajustes</string>
+    <string name="salvar">ahorrar</string>
+
+
+    <string name="espaco_entre_palavras">espacio entre palabras</string>
+    <string name="letras">Palabras</string>
+
+    <string name="tamanho_da_fonte_texto">tamaño de fuente</string>
+    <string name="salvado_com_suscesso">guardado con éxito</string>
+    <string name="salvado_novamente">guardado de nuevo</string>
+
+
+</resources>

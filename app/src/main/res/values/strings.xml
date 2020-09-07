@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name" translatable="false">Fast Morse Translator</string>
+
+    <string name="traduzir">translate</string>
+    <string name="espaco">space</string>
+    <string name="traco" translatable="false">-</string>
+    <string name="ponto" translatable="false">.</string>
+    <string name="limpa">clear</string>
+    <string name="tabela">table</string>
+
+
+    <string name="copiar">copied</string>
+    <string name="colar">pasted</string>
+
+    <string name="configuracoes">settings</string>
+    <string name="salvar">save</string>
+
+
+    <string name="espaco_entre_palavras">space between words</string>
+    <string name="letras">words</string>
+
+    <string name="tamanho_da_fonte_texto">font Size</string>
+    <string name="salvado_com_suscesso">saved successfully</string>
+    <string name="salvado_novamente">saved again</string>
+
+
+</resources>

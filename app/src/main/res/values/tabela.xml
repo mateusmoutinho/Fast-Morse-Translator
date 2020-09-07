@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string-array name="alfabeto">
+        <item>"A    .-       0    -----        .    .-.-.-   "</item>
+        <item>"B    -...     1    .----        -    -....-   " </item>
+        <item>"C    -.-.     2    ..---       "\"  .-..-.    " </item>
+        <item>"D    -..      3    ...--        ,    --..--   " </item>
+        <item>"E    .        4    ....-        ?    ..--..   " </item>
+        <item>"F    ..-.     5    .....        '    .----.   " </item>
+        <item>"G    --.      6    -....        !     -.-.--  " </item>
+        <item>"H    ....     7    --...        /    -..-.    " </item>
+        <item>"I    ..       8    ---..        (    -.--.    " </item>
+        <item>"J    .---     9    ----.        )    -.--.-   " </item>
+        <item>"K    -.-                        &amp;:   .-...    " </item>
+        <item>"L    .-..                       :    ---···   " </item>
+        <item>"M    --                         ;    -·-·-·   "  </item>
+        <item>"N    -.                         =    -···-    " </item>
+        <item>"O    ---                        _    ··--·-   " </item>
+        <item>"P    .--.                       $    ···-··-  " </item>
+        <item>"Q    --.-                       @    ·--·-·   " </item>
+        <item>"R    .-.                                      " </item>
+        <item>"S    ...                                      " </item>
+        <item>"T    -                                        " </item>
+        <item>"U    ..-                                      " </item>
+        <item>"V    ...-                                     " </item>
+        <item>"W    .--                                      " </item>
+        <item>"X    -..-                                     " </item>
+        <item>"Y    -.--                                     " </item>
+        <item>"Z    --..                                     " </item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+
+</resources>

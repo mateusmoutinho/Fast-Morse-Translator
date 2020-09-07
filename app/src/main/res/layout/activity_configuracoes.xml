@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="40dp"
+    tools:context=".Configuracoes">
+
+    <TextView
+        android:id="@+id/tamanho_de_fonte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/tamanho_da_fonte_texto"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/espaco_entre_palavras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tamanho_de_fonte"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/espaco_entre_palavras"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tipo_de_letra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco_entre_palavras"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/letras"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:includeFontPadding="true"
+        android:text="@string/configuracoes"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_espaco_entre_palavras"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tamanho_de_fonte"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:entries="@array/tipo_de_espaco"
+        android:gravity="left"
+        android:isScrollContainer="false"
+        android:layerType="none"
+        android:saveEnabled="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarSize="@android:dimen/app_icon_size"
+        android:scrollbarStyle="insideInset"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spinner_tamanho_de_fonte"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:entries="@array/tamanho_de_fonte"
+        android:isScrollContainer="false"
+        android:layerType="none"
+        android:saveEnabled="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarSize="@android:dimen/app_icon_size"
+        android:scrollbarStyle="insideInset"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spinner_de_letras_maiusculas_e_minusculas"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco_entre_palavras"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:entries="@array/letras_maiusculas_e_minusculas"
+        android:isScrollContainer="false"
+        android:layerType="none"
+        android:saveEnabled="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarSize="@android:dimen/app_icon_size"
+        android:scrollbarStyle="insideInset"
+        android:spinnerMode="dropdown" />
+
+    <ImageView
+        android:id="@+id/linha_cinza"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="#5A5A5A"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/linha_cinza2"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@id/tipo_de_letra"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#5A5A5A"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/linha_cinza2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="#43A047"
+        android:onClick="salvar"
+        android:text="@string/salvar" />
+
+    <TextView
+        android:id="@+id/salvado_com_suscesso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/salvar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/salvado_com_suscesso"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tamanho_de_fonte">
+        <item>маленький</item>
+        <item>средний</item>
+        <item>большой</item>
+        <item>гигантs</item>
+    </string-array>
+
+    <string-array name="tipo_de_espaco">
+        <item>бар</item>
+        <item>2 пробела</item>
+        <item>3 пробела</item>
+        <item>4 пробела</item>
+    </string-array>
+
+    <string-array name="letras_maiusculas_e_minusculas">
+        <item>в нижнем регистре</item>
+        <item>заглавные буквы</item>
+    </string-array>
+
+
+
+
+
+
+
+
+</resources>
